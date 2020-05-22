@@ -6,6 +6,10 @@ import java.io.InputStreamReader;
 
 public class MyConsoleReader {
     public static void main(String[] args) throws IOException {
+        readAndPrint();
+    }
+
+    private static void readAndPrint() throws IOException {
         BufferedReader br= new BufferedReader(new InputStreamReader(System.in));
         StringBuffer stringBuffer= new StringBuffer();
 
