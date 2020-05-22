@@ -33,8 +33,12 @@ class MyFileReader{
                     throw new BadLineException("Unexpected string found at line "+line, buffer);
                 }
             }
-        } catch (IOException | BadLineException e) {
-            e.printStackTrace();
+        } catch (BadLineException e) {
+            System.out.println("Bad Line found at line: "+e.getBadLine());
+        }
+        catch (IOException e)
+        {
+            System.out.println(e.getMessage());
         }
     }
 
