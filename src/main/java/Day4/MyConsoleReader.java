@@ -16,8 +16,8 @@ public class MyConsoleReader {
         String input="";
         while(!input.equals("stop"))
         {
-            input= br.readLine();
             stringBuffer.append(input).append("\n");
+            input= br.readLine();
         }
         System.out.println(stringBuffer);
     }
